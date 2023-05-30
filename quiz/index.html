@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .body{
+                background-image: url(./download.jpeg);
+                background-size: cover;
+            }
+            .background-image {
+                filter: brightness(50%);
+            }
+            .cantainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+
+            }
+            .sdiv{
+                background-color: gray;
+                padding-left: 40px;
+                padding-top: 20px;
+                padding-right: 40px;
+                padding-bottom: 20px;
+                margin-left: 70px;
+                margin-right: 70px;
+                border-radius: 30px;
+                align-items: center;
+                border-color: red;
+                box-sizing: border-box;
+            }
+            .sbtn{
+                align-items: center;
+                border-radius: 40px;
+                text-transform: capitalize;
+                text-shadow: 30px;
+                margin-top: 10px;
+
+            }
+            .sbtn:hover{
+                transition-duration: 100ms;
+                animation-duration: 100ms;
+                transform: scale(1.2);
+                background-color: royalblue;
+
+            }
+            .headerone{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            }
+            .headerone:hover{
+                transform: scale(1.1);
+                transition-duration: 200ms;
+                font: bold;
+            }
+
+        </style>
+    </head>
+<body class="body">
+    <div class="cantainer">
+    <h1 class="headerone">WELCOME to Quiz time site !!!</h1>
+</div><br>
+    <br>
+    <div class="cantainer">
+    <button id="startbutton" class="sbtn">START</button>
+</div><br>
+    
+    <div id="div1" class="sdiv">
+        <h1 id="questions"></h1>
+        <input type="radio" name="answer">
+        <label for="option1" id="answeroption1"></label><br>
+        <input type="radio" name="answer">
+        <label for="option1" id="answeroption2"></label><br>
+        <input type="radio" name="answer">
+        <label for="option1" id="answeroption3"></label><br>
+        <input type="radio" name="answer">
+        <label for="option1" id="answeroption4"></label><br>
+    </div><br>
+    <div class="cantainer">
+    <button id="submitclick" onclick="submitanswer()" class="sbtn">NEXT</button>
+</div>
+
+<script src="./script.js"> </script>
+
+
+</body>
+</html>

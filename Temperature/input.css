@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply bg-blue-600 rounded-lg p-1 hover:scale-110 duration-300 hover:bg-red-700
+}
+
+.cbox{
+    @apply hover:scale-105 duration-200
+}
+
+
+.background-image{
+    filter: opacity(50%);
+}

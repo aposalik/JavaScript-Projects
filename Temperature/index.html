@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Temperature Changing</title>
+    <script src="./script.js"></script>
+    <link rel="icon" href="./sun2.avif" type="image/x-icon">
+
+</head>
+<body class="columns-1 flex justify-center " style="background-image: linear-gradient(rgba(0,0,0,0.60)
+,rgba(0,0,0,0.60)), url(./istockphoto-1393245512-170667a.jpg); background-size: cover; background-position: center;">
+    <div>
+        <div class="flex justify-center">
+        <h1 class="text-white mx-auto font-semibold ">Welcome to SALIK Temperature</h1>
+        </div>
+<div class="p-10 mx-32 my-20 rounded-md hover:scale-125 duration-500" style="background-image: linear-gradient(rgba(0,0,0,0.60)
+,rgba(0,0,0,0.60)), url(./sun3.avif); background-size: cover; background-position: center;">
+    <main>
+        <div class="place-items-center flex flex-col">
+            
+            <h1 id="answer" class="font-bold bg-white "></h1>
+            <div class="my-3 justify-center">
+                <input id="inputTemp" class="rounded-sm p-2 items-center my-4 " type="number" placeholder="Enter your Value"><br>
+                <div class="flex justify-center gap-2">
+                <label class="font-bold">Celsius</label>
+                <input id="" class="cbox" type="radio" name="name" value="C">
+                <label class="font-bold" >Fahrenheit</label>
+                <input id="" class="cbox" type="radio" name="name" value="F">
+            </div>
+            </div>
+            <button class="btn" id="changebtn" onclick="convertTempeture()">CHANGE</button>
+        </div>
+    </main>
+</div>
+</div>
+    
+</body>
+</html>

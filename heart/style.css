@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caintainer{
+    background-color: rgb(168, 101, 20);
+    position: relative;
+    height: 420px;
+    width: 320px;
+    background-image: url(./abdullah.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.caintainer .heart{
+    position: absolute;
+    font: 80px;
+    color: red;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%); 
+}
+.heart.active{
+    animation: animate 0.8s linear forwards;
+}
+@keyframes animate {
+    30%{
+        opacity: 1;
+        font-size: 70px;
+    }
+    50%{
+        opacity: 1;
+        font-size: 60px;
+    }
+    70%{
+        opacity: 1;
+        font-size: 70px;
+    }
+    80%{
+        opacity: 1;
+        font-size: 60px;
+    }
+    90%{
+        opacity: 1;
+        font-size: 60px;
+    }
+    
+}

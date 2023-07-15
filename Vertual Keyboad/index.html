@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-500 flex relative justify-center items-center ">
+    <div class="cantiner">
+        <div class="input flex justify-center items-center mt-10 mb-8 ">
+            <input readonly id="output" type="text" class="rounded-sm p-1 h-12 w-96">
+        </div>
+        <div class="keyboards p-5 border rounded-sm">
+            <div class="row flex flex-row gap-4 mb-3 mt-4 ">
+                <div class="key"  onclick = "writekeyboard('1')">1</div>
+                <div class="key" onclick = "writekeyboard('2')">2</div>
+                <div class="key" onclick = "writekeyboard('3')">3</div>
+                <div class="key" onclick = "writekeyboard('4')">4</div>
+                <div class="key" onclick = "writekeyboard('5')">5</div>
+                <div class="key" onclick = "writekeyboard('6')">6</div>
+                <div class="key" onclick = "writekeyboard('7')">7</div>
+                <div class="key" onclick = "writekeyboard('8')">8</div>
+                <div class="key" onclick = "writekeyboard('9')">9</div>
+                <div class="key" onclick = "writekeyboard('0')">0</div>
+                <div class="key" onclick = "writekeyboard('-')">-</div>
+                <div class="key" onclick = "writekeyboard('+')">+</div>
+                <div class="key" onclick = "backSpace()">backspace</div>
+            </div>
+
+            <div class="row flex flex-row gap-4 mb-3 mt-4 ">
+                <div class="key" onclick = "writekeyboard('      ')">tap</div>
+                <div class="key" onclick = "writekeyboard('q')">Q</div>
+                <div class="key" onclick = "writekeyboard('w')">W</div>
+                <div class="key" onclick = "writekeyboard('e')">E</div>
+                <div class="key" onclick = "writekeyboard('r')">R</div>
+                <div class="key" onclick = "writekeyboard('t')">T</div>
+                <div class="key" onclick = "writekeyboard('y')">Y</div>
+                <div class="key" onclick = "writekeyboard('u')">U</div>
+                <div class="key" onclick = "writekeyboard('i')">I</div>
+                <div class="key" onclick = "writekeyboard('o')">O</div>
+                <div class="key" onclick = "writekeyboard('p')">P</div>
+                <div class="key" onclick = "writekeyboard('')">[</div>
+                <div class="key" onclick = "writekeyboard('')">]</div>
+                <div class="key" onclick = "writekeyboard(' ')">\</div>
+            </div>
+
+            <div class="row flex flex-row gap-4 mb-3 mt-4 ">
+                <div class="key">Caps L</div>
+                <div class="key" onclick = "writekeyboard('a')">A</div>
+                <div class="key" onclick = "writekeyboard('s')">S</div>
+                <div class="key" onclick = "writekeyboard('d')">D</div>
+                <div class="key" onclick = "writekeyboard('f')">F</div>
+                <div class="key" onclick = "writekeyboard('g')">G</div>
+                <div class="key" onclick = "writekeyboard('h')">H</div>
+                <div class="key" onclick = "writekeyboard('j')">J</div>
+                <div class="key" onclick = "writekeyboard('k')">K</div>
+                <div class="key" onclick = "writekeyboard('l')">L</div>
+                <div class="key" onclick = "writekeyboard(';')">;</div>
+                <div class="key" onclick = "writekeyboard(' ')">"</div>
+                <div class="key" onclick = "writekeyboard('')">Enter</div>
+            </div>
+
+            <div class="row flex flex-row gap-4 mb-3 mt-4 ">
+                <div class="key " onclick = "writekeyboard('')">shift</div>
+                <div class="key" onclick = "writekeyboard('z')">Z</div>
+                <div class="key" onclick = "writekeyboard('x')">X</div>
+                <div class="key" onclick = "writekeyboard('c')">C</div>
+                <div class="key" onclick = "writekeyboard('v')">V</div>
+                <div class="key" onclick = "writekeyboard('b')">B</div>
+                <div class="key" onclick = "writekeyboard('n')">N</div>
+                <div class="key" onclick = "writekeyboard('m')">M</div>
+                <div class="key" onclick = "writekeyboard(',')">,</div>
+                <div class="key" onclick = "writekeyboard('.')">.</div>
+                <div class="key" onclick = "writekeyboard('?')">?</div>
+                <div class="key w-32" onclick = "writekeyboard('')">Shift</div>
+            </div>
+
+            <div class="row flex flex-row gap-4 mb-3 mt-4 ">
+                <div class="key " onclick = "writekeyboard('')">ctrl</div>
+                <div class="key" onclick = "writekeyboard('')">fn</div>
+                <div class="key" onclick = "writekeyboard('')">WIN</div>
+                <div class="key" onclick = "writekeyboard('')">alt</div>
+                <div class="key" onclick = "writekeyboard('')">ctrl</div>
+                <div class="key" onclick = "writekeyboard('')">⬅️</div>
+                <div class="key" onclick = "writekeyboard('')">⬇️</div>
+                <div class="key" onclick = "writekeyboard('')">⬆️</div>
+                <div class="key" onclick = "writekeyboard('')">➡️</div>
+            </div>
+
+            <div class="row flex flex-row gap-4 mb-3 mt-4 justify-center
+            items-center ">
+                <div class="key w-96" onclick="writekeyboard(' ')">space</div>
+            <div class="row">
+                    <div class="key" onclick="toggleEmojiKeyboard()">🔄</div>
+            </div>
+                
+            </div>
+            <span class="chbtn"></span>
+
+           
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

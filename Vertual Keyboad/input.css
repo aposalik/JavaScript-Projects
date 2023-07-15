@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.key{
+    @apply bg-slate-700 font-mono text-white
+    p-3 rounded-md cursor-pointer hover:bg-black duration-200
+   flex justify-center items-center hover:scale-105
+}
+
+.chbtn{
+    @apply cursor-pointer hover:scale-110 duration-150 text-lg;
+}
+
+/* ... existing code ... */
+
+.emoji-keyboard .key {
+    @apply bg-red-600
+  }
+  

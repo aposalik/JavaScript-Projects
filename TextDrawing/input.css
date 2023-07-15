@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cantainer{
+    @apply flex flex-col items-center justify-center gap-2 p-4
+}
+
+#myCanvas{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    border: 5px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
